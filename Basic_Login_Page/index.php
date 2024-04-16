@@ -45,7 +45,7 @@
         }
         else {
             $hash = password_hash($password, PASSWORD_DEFAULT);
-            $sql = "INSERT INTO user (username, password) VALUES ('$username', '$hash')";
+            $sql = "INSERT INTO details (username, password) VALUES ('$username', '$hash')";
             mysqli_query($conn, $sql);
             echo "You are now registered successfully in Computer Society Of India";
         }
